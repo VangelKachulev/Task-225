@@ -7,12 +7,62 @@
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+    <div class="title">
+      <button class="dropdown button is-white">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <h1>FITNESS COACH APP</h1>
     </div>
+
+    <a class="navbar-item">Exercises</a>
+    <a class="navbar-item">Diet</a>
+    <a class="navbar-item">Supliments</a>
+    <a class="navbar-item">Rest advises</a>
+
+    <div class="picture">
+      <img src="https://cdn-icons-png.flaticon.com/512/4437/4437115.png" />
+    </div>
+
+    <a class="box">Enter your workout to track your progress</a>
+
+    <label class="label"> Your Goal </label>
+    <progress class="progress is-success is-large" value="60" max="100">
+      60%
+    </progress>
+
+    <div class="buttons">
+      <button class="button is-large">
+        <i class="fa-solid fa-dumbbell"></i>
+      </button>
+
+      <button class="button is-large">
+        <i class="fa-solid fa-house"></i>
+      </button>
+
+      <button class="button is-large">
+        <i class="fa-solid fa-apple-whole"></i>
+      </button>
+    </div>
+
+    <script>
+      document.querySelector(".dropdown").addEventListener("click", () => {
+        const nav = document.querySelector(".navigation");
+        if (nav.classList.contains("closed")) {
+          nav.classList.remove("closed");
+        } else {
+          nav.classList.add("closed");
+        }
+      });
+    </script>
   </body>
 </html>
