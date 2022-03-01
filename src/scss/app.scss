@@ -19,11 +19,88 @@ html {
   background: $background;
 }
 
-.main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10rem;
-  flex-flow: column;
+@media (max-width: 850px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #4886d9;
+    margin: 0px !important;
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 5px;
+  }
+
+  .navbar-item {
+    background: #4886d9;
+    text-align: start;
+    color: $white;
+    font-weight: 700;
+  }
+  img {
+    width: 250px;
+  }
+
+  .closed {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .picture {
+    margin-top: 25px;
+    align-self: center;
+    padding: 20px;
+  }
+
+  .description {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  .goal {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .label {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    .buttons {
+      background: $white;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        margin: 10px;
+        border: none;
+      }
+    }
+  }
 }
